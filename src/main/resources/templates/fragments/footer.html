@@ -10,10 +10,19 @@
     <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
     <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
     <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
-
+    <style>
+        body {
+            padding-top: 60px;
+        }
+    </style>
 
 </head>
 <body>
+
+<footer th:fragment="footer_fragment" class="py-5 bg-dark">
+    <p class="m-0 text-center text-white"> Copyright &copy; Aman 2021</p>
+</footer>
+
 
 </body>
 </html>
