@@ -2,14 +2,14 @@ package lexicon.se.workshop.dto;
 
 import java.util.Arrays;
 
-public class ProductDtoDetails {
+public class ProductDetailsDto {
 
     private int id;
     private String name;
     private String description;
     private byte[] image;
 
-    public ProductDtoDetails() {
+    public ProductDetailsDto() {
     }
 
     public int getId() {

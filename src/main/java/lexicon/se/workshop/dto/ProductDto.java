@@ -5,7 +5,7 @@ public class ProductDto {
     private int id;
     private String name;
     private int price;
-    private ProductDtoDetails productDetailsDto;
+    private ProductDetailsDto productDetailsDto;
 
     public ProductDto() {
     }
@@ -34,11 +34,11 @@ public class ProductDto {
         this.price = price;
     }
 
-    public ProductDtoDetails getProductDetailsDto() {
+    public ProductDetailsDto getProductDetailsDto() {
         return productDetailsDto;
     }
 
-    public void setProductDetailsDto(ProductDtoDetails productDetailsDto) {
+    public void setProductDetailsDto(ProductDetailsDto productDetailsDto) {
         this.productDetailsDto = productDetailsDto;
     }
 
