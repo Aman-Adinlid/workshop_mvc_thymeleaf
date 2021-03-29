@@ -5,16 +5,16 @@ import javax.persistence.*;
 @Entity
 
 public class Product {
-@Id
-@GeneratedValue(strategy = GenerationType.IDENTITY)
-private int id;
-@Column(nullable = false, length = 250)
-private String name;
-@Column(nullable = false)
-private int price;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    @Column(nullable = false, length = 250)
+    private String name;
+    @Column(nullable = false)
+    private int price;
 
-@OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
-private ProductDetails productDetails;
+    @OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    private ProductDetails productDetails;
 
     public Product() {
     }
